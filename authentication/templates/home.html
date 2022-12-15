@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+
+
+{% block content %}
+
+{% if not email %}
+
+<h1>Hello, <a href="{{url_for('login')}}">log in</a>?</h1>
+
+{% else %}
+
+<h1>Hello, {{email}}</h1>
+
+{% endif %}
+
+{% endblock content %}
